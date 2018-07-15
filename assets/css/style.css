@@ -3105,9 +3105,9 @@ select {
 }
 .news-text a {
 	color: #282828;
-	display: block;
+	display: inline-block;
 	font-size: 20px;
-	font-weight: 500;
+	font-weight: 300;
 	margin-bottom: 15px;
 	text-decoration: none;
 }
