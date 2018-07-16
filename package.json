@@ -1,0 +1,23 @@
+{
+  "name": "thetstory-landing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rohankalgutkar/thetstory-landing.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rohankalgutkar/thetstory-landing/issues"
+  },
+  "homepage": "https://github.com/rohankalgutkar/thetstory-landing#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.3"
+  }
+}
