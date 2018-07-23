@@ -3,7 +3,12 @@ const app = express();
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
-app.get('/', function (req, res) {
+// Home page (Currenctly coming-soon)
+app.get('/', (req, res) => {
+  res.render('coming-soon/index.ejs');
+});
+
+app.get('/dev', function (req, res) {
   res.render('index');
 });
 
@@ -27,6 +32,11 @@ app.get('/contact', function (req, res) {
   res.render('contact');
 });
 
+app.get('/blog', function (req, res) {
+  res.render('blog');
+});
+
+// Temp
 app.get('/index-ref', function (req, res) {
   res.render('index-ref');
 });
