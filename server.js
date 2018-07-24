@@ -36,11 +36,15 @@ app.get('/blog', function (req, res) {
   res.render('blog');
 });
 
+app.get('/blog-post-1', function (req, res) {
+  res.render('blog-post-1');
+});
+
 // Temp
 app.get('/index-ref', function (req, res) {
   res.render('index-ref');
 });
 
-app.listen(3000, function () {
-  console.log('Example app listening on port 3000!')
+app.listen(9000, function () {
+  console.log('Example app listening on port 9000!')
 });
