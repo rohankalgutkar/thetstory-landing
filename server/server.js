@@ -1,19 +1,36 @@
 const express = require('express');
 const app = express();
+const port = 9000;
+
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
-// Home page (Currenctly coming-soon)
+// Coming Soon Page
 app.get('/', (req, res) => {
   res.render('coming-soon/index.ejs');
 });
 
+// Temporary route for development
 app.get('/dev', function (req, res) {
   res.render('index');
 });
 
-app.get('/about-us', function (req, res) {
-  res.render('about-us');
+
+// Main Routes
+/* // Home page
+app.get('/', (req, res) => {
+  res.render('index');
+});
+*/
+
+// About
+app.get('/about', function (req, res) {
+  res.render('about');
+});
+
+// Contact
+app.get('/contact', function (req, res) {
+  res.render('contact');
 });
 
 app.get('/privacy-policy', function (req, res) {
@@ -28,9 +45,7 @@ app.get('/services', function (req, res) {
   res.render('services');
 });
 
-app.get('/contact', function (req, res) {
-  res.render('contact');
-});
+
 
 app.get('/blog', function (req, res) {
   res.render('blog');
@@ -45,6 +60,6 @@ app.get('/index-ref', function (req, res) {
   res.render('index-ref');
 });
 
-app.listen(9000, function () {
-  console.log('Example app listening on port 9000!')
+app.listen(port, function () {
+  console.log('App started on port', port);
 });
